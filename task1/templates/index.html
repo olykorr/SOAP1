@@ -1,0 +1,118 @@
+<html>
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+	<title>%TITLE%</title>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col text-center">
+				<h4>%TITLE%</h4>
+				<div style="font-size: 10px;"><strong>%ERRORS%</strong></div>
+			</div>
+		</div>
+
+    <div class="text-center">
+      <h4><span class="badge">SOAP</span></h4>
+    </div>
+
+    <div class="text-center">
+      <h4><span class="badge">Country SOAP</span></h4>
+    </div>
+
+		<div class="row">
+			<div class="col">
+        <h4><span class="badge">Get Continents</span></h4>
+        {{CONTINENTS|<div>%SCODE% %SNAME%</div>}}
+        <h4><span class="badge">Get Countries</span></h4>
+        <div >{{COUNTRIES|<div>%SISOCODE% %SNAME%</div>}}</div>
+      </div>
+		</div>
+
+    <div class="text-center">
+      <h2><span class="badge">Get Country FULL info by CODE=UA</span></h2>
+    </div>
+	 <div class="text-center">
+         {{COUNTRYFULL|<img src="%SCOUNTRYFLAG%"></img>}}
+	</div>
+
+    <div class="row">
+      <div class="col">
+        <h4>ISO CODE</h4>
+        {{COUNTRYFULL|<div>%SISOCODE%</div>}}
+      </div>
+      <div class="col">
+        <h4>Sname</h4>
+        {{COUNTRYFULL|<div>%SNAME%</div>}}
+      </div>
+      <div class="col">
+        <h4>sCapitalCity</h4>
+        {{COUNTRYFULL|<div>%SCAPITALCITY%</div>}}
+      </div>
+      <div class="col">
+        <h4>sCurrencyISOCode</h4>
+        {{COUNTRYFULL|<div>%SCURRENCYISOCODE%</div>}}
+      </div>
+     
+    </div>
+
+        <div class="row">
+			<div class="col">
+				<h4><span class="badge">ALL ISBN Avalible Functions</span></h4>
+        <div><small>%ISBNSOAPFUNCTIONS%</small></div>
+			</div>
+
+    </div>
+</div>
+
+
+
+	<div class="text-center">
+      <h2><span class="badge">Country CURL</span></h2>
+   
+    </div>
+
+	
+    <div class="row">
+
+      <div class="col">
+        <h2><span class="badge">Get Continents</span></h2>
+        {{CONTINENTSCURL|<div>%SCODE% %SNAME%</div>}}
+        <h2><span class="badge">Get Countries</span></h2>
+        <div>{{COUNTRIESCURL|<div>%SISOCODE% %SNAME%</div>}}</div>
+      </div>
+	</div>
+
+		
+	<div class="text-center">
+      <h2><span class="badge">Get Country FULL info by CODE=UA</span></h2>
+    </div>
+	<div class="text-center">
+        <img src="%SCOUNTRYFLAG%" alt="flag"></img>
+      </div>
+	  
+    <div class="row">
+      <div class="col">
+        <h4>ISO CODE</h4>
+        <div>%SISOCODE%</div>
+      </div>
+      <div class="col">
+        <h4>SNAME</h4>
+       <div>%SNAME%</div>
+      </div>
+      <div class="col">
+        <h4>sCapitalCity</h4>
+        <div>%SCAPITALCITY%</div>
+      </div>
+      <div class="col">
+        <h4>sCurrencyISOCode</h4>
+        <div>%SCURRENCYISOCODE%</div>
+      </div>
+      
+    </div>
+
+
+
+	</div>
+</body>
+</html>
