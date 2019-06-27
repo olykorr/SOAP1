@@ -1,5 +1,5 @@
 <?php
-include_once ('libs/prettyPrint.lib.php');
+
 include_once ('libs/SoapClientMaker.php');
 
 $sclient = new SoapClientMaker();
