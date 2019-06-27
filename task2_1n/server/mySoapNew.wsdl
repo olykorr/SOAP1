@@ -9,7 +9,7 @@
              xmlns='http://schemas.xmlsoap.org/wsdl/'>
     <types>
 
-        <schema xmlns="http://www.w3.org/2000/10/XMLSchema" targetNamespace="http://192.168.0.15/~user16/SOAP/task2_1n/server/"> 
+        <schema xmlns="http://www.w3.org/2000/10/XMLSchema" targetNamespace="http://192.168.0.15/~user16/SOAP1/task2_1n/server/"> 
             <xsd:complexType name="ParamAuto">
                 <xsd:sequence>
                     <element name="id">
@@ -162,7 +162,7 @@
     </binding>
     <service name='CarService'>
         <port name='CarPort' binding='CarBinding'>
-            <soap:address location='http://192.168.0.15/~user16/SOAP/task2_1n/server/index.php'/>
+            <soap:address location='http://192.168.0.15/~user16/SOAP1/task2_1n/server/index.php'/>
         </port>
     </service>
 
